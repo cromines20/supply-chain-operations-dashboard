@@ -1,0 +1,37 @@
+column,dtype,missing_count,unique_count
+Product type,object,0,3
+SKU,object,0,100
+Price,float64,0,100
+Availability,int64,0,63
+Units sold,int64,0,96
+Revenue,float64,0,100
+Customer demographics,object,0,4
+Stock levels,int64,0,65
+Lead times,int64,0,29
+Order quantities,int64,0,61
+Shipping times,int64,0,10
+Shipping carriers,object,0,3
+Shipping costs,float64,0,100
+Supplier name,object,0,5
+Location,object,0,5
+Lead time,int64,0,29
+Production volumes,int64,0,96
+Manufacturing lead time,int64,0,30
+Manufacturing costs,float64,0,100
+Inspection results,object,0,3
+Defect rates,float64,0,100
+Transportation modes,object,0,4
+Routes,object,0,3
+Logistics cost,float64,0,100
+Total cost proxy,float64,0,100
+Profit proxy,float64,0,100
+Profit margin proxy,float64,0,100
+Revenue per unit,float64,0,100
+Cost per unit proxy,float64,0,100
+Inventory coverage ratio,float64,0,99
+Demand-stock gap,int64,0,95
+Fulfillment lead time,int64,0,32
+End-to-end lead time,int64,0,47
+Quality risk flag,object,0,2
+Stock risk flag,object,0,2
+Margin risk flag,object,0,2

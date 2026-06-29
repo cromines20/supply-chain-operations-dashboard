@@ -4,6 +4,21 @@ This is a portfolio-style analytics project focused on supply-chain performance 
 
 The project uses Python for data preparation and exploratory analysis, then Tableau for the final dashboard design.
 
+## Tableau Dashboard
+
+I used `outputs/tableau_supply_chain_enriched.csv` as the primary Tableau data source.
+View the Tableau dashboard here:
+
+[Supply Chain Performance Dashboard](https://public.tableau.com/app/profile/colton.romines/viz/Dashboard_17827118009200/SupplyChainOverview?publish=yes)
+
+### Dashboard Highlights
+
+- Revenue concentration by product category
+- Supplier quality and inspection analysis
+- Logistics cost vs lead time tradeoffs
+- Route and carrier performance heatmap
+- SKU-level profitability and risk prioritization
+
 ## Business Questions
 
 - Which product categories and locations contribute the most revenue?
@@ -26,15 +41,7 @@ The project uses Python for data preparation and exploratory analysis, then Tabl
 - `outputs/*_summary.csv`: summary tables by product, supplier, location, carrier, route, transportation mode, customer segment, and inspection result
 - `outputs/sku_priority_lists.csv`: SKU-level watchlists for revenue, defects, stock risk, and margin risk
 - `outputs/metric_correlations.csv`: correlation scan across key metrics
-- `docs/tableau_dashboard_build_guide.md`: Tableau dashboard build instructions and resume bullet options
 - `docs/executive_insights_writeup.md`: executive-facing insights memo
-
-Install dependencies and run the analysis with:
-
-```bash
-pip install -r requirements.txt
-python3 analysis/supply_chain_eda.py
-```
 
 ## Analysis Notes
 
@@ -45,18 +52,3 @@ Total cost proxy = Manufacturing costs + Shipping costs + Logistics cost
 ```
 
 Profit and margin fields are therefore analytical proxies rather than audited accounting measures.
-
-## Tableau Dashboard
-
-I used `outputs/tableau_supply_chain_enriched.csv` as the primary Tableau data source. The recommended dashboard includes:
-
-- KPI cards for revenue, units sold, margin, inspection fail rate, lead time, and stock-risk SKUs
-- Product revenue and margin view
-- Supplier performance matrix
-- Supplier and inspection quality heatmap
-- Transportation mode cost, speed, and quality scatterplot
-- Route and carrier heatmap
-- Location performance view
-- SKU priority scatterplot
-
-Detailed build instructions are in `docs/tableau_dashboard_build_guide.md`.
